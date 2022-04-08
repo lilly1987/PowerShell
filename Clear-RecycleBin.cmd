@@ -1,0 +1,1 @@
+powershell Clear-RecycleBin -Force
