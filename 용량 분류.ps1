@@ -14,7 +14,7 @@ Get-ChildItem -Path "bak\*png" |
 			$cnt=0
 		}
 		#$_ | Select-Object -Property *
-		([WildcardPattern]::Escape($_.DirectoryName + '\' + $_.BaseName + '.txt' ))
+		#([WildcardPattern]::Escape($_.DirectoryName + '\' + $_.BaseName + '.txt' ))
 		Move-Item -Destination "$num" -Path ([WildcardPattern]::Escape($_.DirectoryName + '\' + $_.BaseName + '.txt' ))
 		Move-Item -Destination "$num" -Path ([WildcardPattern]::Escape($_))
 	} { 'END' }
